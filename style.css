@@ -1,6 +1,9 @@
+@import url(
+	https://fonts.googleapis.com/css?family=Open+Sans:400,700
+);
 body {
   background: #EEEEEE;
-  font: 13px "Times New Roman", Times, sans-serif;
+  font: 13px Lato, sans-serif;
   line-height: 1.4;
   margin: 40px 0;
 }
@@ -105,6 +108,18 @@ a {
   page-break-inside: avoid;
 }
 
+.avoidPageBreak {
+  page-break-inside: avoid;
+}
+
+.url {
+  display: inline;
+}
+
+.urlPrint {
+  display: none;
+}
+
 /* Media Queries */
 @media only screen and (max-width: 40em) {
   body {
@@ -153,5 +168,13 @@ a {
 
   a {
     color: black;
+  }
+
+  .url {
+    display: none;
+  }
+
+  .urlPrint {
+    display: inline;
   }
 }

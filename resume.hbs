@@ -47,6 +47,7 @@
             <span class='url'>
               <a href='{{url}}'>{{network}}</a>
             </span>
+            <span class='urlPrint'>{{url}}</span>
             {{#unless @last}}<span class='divider'>|</span>{{/unless}}
           {{/if}}
       {{/each}}
@@ -146,7 +147,7 @@
 	{{/if}}
 
 	{{#if resume.awards.length}}
-	<div id='awards' class="sectionBlock">
+	<div id='awards' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>AWARDS</span>
     </div>
@@ -177,7 +178,7 @@
 	{{/if}}
 
 	{{#if resume.volunteer.length}}
-	<div id='volunteer' class="sectionBlock">
+	<div id='volunteer' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>VOLUNTEERING</span>
     </div>
@@ -209,7 +210,7 @@
 	{{/if}}
 
 	{{#if resume.education.length}}
-	<div id='education' class="sectionBlock">
+	<div id='education' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>EDUCATION</span>
     </div>
@@ -247,7 +248,7 @@
 	{{/if}}
 
 	{{#if resume.skills.length}}
-	<div id='skills' class="sectionBlock">
+	<div id='skills' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>SKILLS</span>
     </div>
@@ -273,7 +274,7 @@
 	{{/if}}
 
 	{{#if resume.languages.length}}
-	<div id='languages' class="sectionBlock">
+	<div id='languages' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>LANGUAGES</span>
     </div>
@@ -291,7 +292,7 @@
   {{/if}}
 
 	{{#if resume.interests.length}}
-	<div id='interests' class="sectionBlock">
+	<div id='interests' class="sectionBlock avoidPageBreak">
     <div class='sectionName'>
       <span>INTERESTS</span>
     </div>
